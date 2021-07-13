@@ -1,0 +1,22 @@
+#parallax {
+    animation: gradient 30s linear infinite;
+    background: url(../img/parallax-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110% 110%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    display: flex;
+    height: 100vh;
+
+    .scene {
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        overflow: hidden;
+        display: flex;
+        height: 100%;
+        width: 100%;
+    }
+}

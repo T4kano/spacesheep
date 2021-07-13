@@ -1,0 +1,22 @@
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+p {
+    color: #E8E8E8;
+}
+
+@import "parallax";
+@import "about";
+@import "business";
+@import "values";
+@import "partners";
+
+.bg-darker {
+    background: $darker;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}

@@ -1,0 +1,171 @@
+@media (min-width: 1400px) {
+    #business {
+        background-size: 100% 100%;
+        .card {
+            padding: 1.7rem 1.5rem;
+            height: 240px;
+            img {
+                position: relative;
+                max-width: 250px;
+                height: auto;
+                left: -30%;
+            }
+        }
+    }
+}
+
+/*@media (max-width: 1399px) {
+    #about {
+        padding: 2rem 3rem;
+    }
+}*/
+
+@media (max-width: 1199px) {
+    #business {
+        background: #fff;
+    }
+
+    #values {
+        background: $body-bg;
+        padding: 3rem 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    html {
+        scroll-snap-type: y proximity;
+    }
+
+    section {
+        min-height: 100vh;
+        position: relative;
+        scroll-snap-align: center;
+    }
+
+    a.scroll {
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        //z-index: 2;
+        display: inline-block;
+        transform: translate(0, -50%);
+        color: #fff;
+        font: normal 400 20px/1 "Josefin Sans", sans-serif;
+        letter-spacing: 0.1em;
+        text-decoration: none;
+        transition: opacity 0.3s;
+    
+        &:hover {
+            opacity: 0.5;
+        }
+    
+        span {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 46px;
+            height: 46px;
+            margin-left: -23px;
+            border: 1px solid #fff;
+            border-radius: 100%;
+            box-sizing: border-box;
+    
+            &::after {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                content: "";
+                width: 16px;
+                height: 16px;
+                margin: -12px 0 0 -8px;
+                border-left: 1px solid #fff;
+                border-bottom: 1px solid #fff;
+                transform: rotate(-45deg);
+                box-sizing: border-box;
+            }
+    
+            &::before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                //z-index: -1;
+                content: "";
+                width: 44px;
+                height: 44px;
+                box-shadow: 0 0 0 0 rgba($color: #fff, $alpha: 0.1);
+                border-radius: 100%;
+                opacity: 0;
+                animation: pin 3s infinite;
+                box-sizing: border-box;
+            }
+        }
+    }
+
+    #business {
+        background-size: 100% 100%;
+
+        a.scroll {
+            color: #000;
+        
+            span {
+                border: 1px solid #000;
+        
+                &::after {
+                    border-left: 1px solid #000;
+                    border-bottom: 1px solid #000;
+                }
+
+                &::before {
+                    box-shadow: 0 0 0 0 rgba($color: #000, $alpha: 0.1);
+                }
+            }
+        }
+
+        .card {
+            box-shadow: 0 0 0 #cccccc, 0 0 0 #ffffff, 10px 10px 10px #cccccc inset, -10px -10px 10px #ffffff inset;
+
+            &:hover {
+                box-shadow: 9px 9px 16px rgba($color: #a3b1c6, $alpha: 0.6),
+                    -9px -9px 16px rgba($color: #fff, $alpha: 0.5);
+                transform: translate3d(-5px, -5px, 0);
+                cursor: pointer;
+            }
+        }
+    }
+
+    #values {
+        background-size: 100% 100%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    #business {
+        .card {
+            padding: 1rem 0.5rem;
+            height: 210px;
+            img {
+                position: relative;
+                max-width: 230px;
+                height: auto;
+                left: -40%;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .waves {
+        height: 40px;
+        min-height: 40px;
+    }
+}
+
+//@media (min-width: 768px) {}
+
+/*
+sm 576px
+md 768px
+lg 992px
+xl 1200px
+xxl 1400px
+*/

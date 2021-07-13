@@ -1,0 +1,21 @@
+#business {
+    background: url(../img/business-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+
+    .card {
+        box-shadow: 9px 9px 16px rgba($color: #a3b1c6, $alpha: 0.6), -9px -9px 16px rgba($color: #fff, $alpha: 0.5);
+        transition: all 0.7s ease-in-out;
+        border-radius: 12px;
+        background: #fff;
+        color: #000;
+        border: none;
+        .card-text {
+            color: #43474d;
+        }
+    }
+}
