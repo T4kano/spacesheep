@@ -9,6 +9,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.0.1"
-  }
+    "bootstrap": "^5.0.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/T4kano/spacesheep.git"
+  },
+  "bugs": {
+    "url": "https://github.com/T4kano/spacesheep/issues"
+  },
+  "homepage": "https://github.com/T4kano/spacesheep#readme"
 }

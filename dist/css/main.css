@@ -4,22 +4,22 @@ html {
 }
 
 p {
-  color: #e8e8e8;
+  color: #E8E8E8;
 }
 
 #parallax {
   -webkit-animation: gradient 30s linear infinite;
-  animation: gradient 30s linear infinite;
+          animation: gradient 30s linear infinite;
   background: url(../img/parallax-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 110% 110%;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29,11 +29,11 @@ p {
 
 #parallax .scene {
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   overflow: hidden;
   display: -webkit-box;
@@ -45,11 +45,11 @@ p {
 
 #about {
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,12 +69,12 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-size: cover;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,7 +82,7 @@ p {
 
 #business .card {
   -webkit-box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
-  box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+          box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
   -webkit-transition: all 0.7s ease-in-out;
   transition: all 0.7s ease-in-out;
   border-radius: 12px;
@@ -100,12 +100,12 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-size: cover;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -121,49 +121,49 @@ p {
   width: 100%;
   height: 15vh;
   margin-bottom: -7px;
+  /*Fix for safari gap*/
   min-height: 100px;
   max-height: 150px;
 }
 
 #partners .waves .wave > use {
   -webkit-animation: wave 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
-  animation: wave 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+          animation: wave 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
 }
 
 #partners .waves .wave > use:nth-child(1) {
   -webkit-animation-delay: -2s;
-  animation-delay: -2s;
+          animation-delay: -2s;
   -webkit-animation-duration: 7s;
-  animation-duration: 7s;
+          animation-duration: 7s;
 }
 
 #partners .waves .wave > use:nth-child(2) {
   -webkit-animation-delay: -3s;
-  animation-delay: -3s;
+          animation-delay: -3s;
   -webkit-animation-duration: 10s;
-  animation-duration: 10s;
+          animation-duration: 10s;
 }
 
 #partners .waves .wave > use:nth-child(3) {
   -webkit-animation-delay: -4s;
-  animation-delay: -4s;
+          animation-delay: -4s;
   -webkit-animation-duration: 13s;
-  animation-duration: 13s;
+          animation-duration: 13s;
 }
 
 #partners .waves .wave > use:nth-child(4) {
   -webkit-animation-delay: -5s;
-  animation-delay: -5s;
+          animation-delay: -5s;
   -webkit-animation-duration: 20s;
-  animation-duration: 20s;
+          animation-duration: 20s;
 }
 
 #partners .footer {
   background: #ffae1a;
 }
 
-#partners .footer h1,
-#partners .footer p {
+#partners .footer h1, #partners .footer p {
   color: #161a1d;
 }
 
@@ -184,14 +184,14 @@ p {
 @-webkit-keyframes rotate {
   to {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
 @keyframes rotate {
   to {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
@@ -228,7 +228,7 @@ p {
   }
   60% {
     -webkit-box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.1);
     opacity: 0;
   }
   100% {
@@ -245,7 +245,7 @@ p {
   }
   60% {
     -webkit-box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.1);
     opacity: 0;
   }
   100% {
@@ -256,22 +256,22 @@ p {
 @-webkit-keyframes wave {
   0% {
     -webkit-transform: translate3d(-90px, 0, 0);
-    transform: translate3d(-90px, 0, 0);
+            transform: translate3d(-90px, 0, 0);
   }
   100% {
     -webkit-transform: translate3d(85px, 0, 0);
-    transform: translate3d(85px, 0, 0);
+            transform: translate3d(85px, 0, 0);
   }
 }
 
 @keyframes wave {
   0% {
     -webkit-transform: translate3d(-90px, 0, 0);
-    transform: translate3d(-90px, 0, 0);
+            transform: translate3d(-90px, 0, 0);
   }
   100% {
     -webkit-transform: translate3d(85px, 0, 0);
-    transform: translate3d(85px, 0, 0);
+            transform: translate3d(85px, 0, 0);
   }
 }
 
@@ -291,6 +291,11 @@ p {
   }
 }
 
+/*@media (max-width: 1399px) {
+    #about {
+        padding: 2rem 3rem;
+    }
+}*/
 @media (max-width: 1199px) {
   #business {
     background: #fff;
@@ -304,7 +309,7 @@ p {
 @media (min-width: 1200px) {
   html {
     -ms-scroll-snap-type: y proximity;
-    scroll-snap-type: y proximity;
+        scroll-snap-type: y proximity;
   }
   section {
     min-height: 100vh;
@@ -312,13 +317,12 @@ p {
     scroll-snap-align: center;
   }
   a.scroll {
-    z-index: 10;
     position: absolute;
     bottom: 10%;
     left: 50%;
     display: inline-block;
     -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
+            transform: translate(0, -50%);
     color: #fff;
     font: normal 400 20px/1 "Josefin Sans", sans-serif;
     letter-spacing: 0.1em;
@@ -339,7 +343,7 @@ p {
     border: 1px solid #fff;
     border-radius: 100%;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+            box-sizing: border-box;
   }
   a.scroll span::after {
     position: absolute;
@@ -352,9 +356,9 @@ p {
     border-left: 1px solid #fff;
     border-bottom: 1px solid #fff;
     -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+            transform: rotate(-45deg);
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+            box-sizing: border-box;
   }
   a.scroll span::before {
     position: absolute;
@@ -364,13 +368,13 @@ p {
     width: 44px;
     height: 44px;
     -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
     border-radius: 100%;
     opacity: 0;
     -webkit-animation: pin 3s infinite;
-    animation: pin 3s infinite;
+            animation: pin 3s infinite;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+            box-sizing: border-box;
   }
   #business {
     background-size: 100% 100%;
@@ -387,17 +391,17 @@ p {
   }
   #business a.scroll span::before {
     -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
   }
   #business .card {
     -webkit-box-shadow: 0 0 0 #cccccc, 0 0 0 #ffffff, 10px 10px 10px #cccccc inset, -10px -10px 10px #ffffff inset;
-    box-shadow: 0 0 0 #cccccc, 0 0 0 #ffffff, 10px 10px 10px #cccccc inset, -10px -10px 10px #ffffff inset;
+            box-shadow: 0 0 0 #cccccc, 0 0 0 #ffffff, 10px 10px 10px #cccccc inset, -10px -10px 10px #ffffff inset;
   }
   #business .card:hover {
     -webkit-box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
-    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+            box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
     -webkit-transform: translate3d(-5px, -5px, 0);
-    transform: translate3d(-5px, -5px, 0);
+            transform: translate3d(-5px, -5px, 0);
     cursor: pointer;
   }
   #values {
@@ -424,3 +428,12 @@ p {
     min-height: 40px;
   }
 }
+
+/*
+sm 576px
+md 768px
+lg 992px
+xl 1200px
+xxl 1400px
+*/
+/*# sourceMappingURL=main.css.map */
