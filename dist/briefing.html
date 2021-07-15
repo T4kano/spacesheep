@@ -7,17 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta author="Eduardo Takano">
 
+    <!-- GOOGLE ROBOTO -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- FAVICON -->
     <link rel="shortcut icon" href="./img/favicon.ico" />
 
-    <link rel="stylesheet" href="./css/custom.css">
-    <!--link rel="stylesheet" href="./css/main.css">-->
+    <!-- jQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
+    <!-- BOOTSTRAP-->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <!-- INDEX JS -->
+    <script src="./js/index.js"></script>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- TITLE -->
     <title>SpaceSheep | Briefing</title>
 </head>
 
 <body>
+    <!-- LOADING -->
+    <div class="loading">
+        <img src="./img/space_loading.gif" class="img-fluid" width="300px" loading="lazy" />
+    </div>
+
     <div class="container-fluid py-5">
         <div class="container col-xxl-8 px-4 py-5">
             <iframe
@@ -95,6 +114,7 @@
                 if (window.addEventListener) { window.addEventListener("message", handleIFrameMessage, false); }
                 else if (window.attachEvent) { window.attachEvent("onmessage", handleIFrameMessage); }
             </script>
+            <a href="index.html">Back to SpaceSheep</a>
         </div> <!-- /.container -->
     </div> <!-- /.container-fluid -->
 </body>

@@ -1,3 +1,10 @@
+// LOADING
+$(window).on("load", function() {
+    $(".loading").fadeOut(1000);
+
+});
+
+// GOOGLE MAPS
 function initMap() {
     var location = { lat: -23.085076844458957, lng: -47.225054519829676 };
     var map = new google.maps.Map(document.getElementById("map"), {

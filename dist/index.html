@@ -7,19 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta author="Eduardo Takano">
 
+    <!-- GOOGLE ROBOTO -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- FAVICON -->
     <link rel="shortcut icon" href="./img/favicon.ico" />
 
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <!-- jQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
+    <!-- BOOTSTRAP-->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <!-- INDEX JS -->
+    <script src="./js/index.js"></script>
+
+    <!-- STYLES -->
     <link rel="stylesheet" href="./css/custom.css">
     <link rel="stylesheet" href="./css/main.css">
-    
+
+    <!-- TITLE -->
     <title>Spacesheep</title>
 </head>
 
 <body>
+
+    <!-- LOADING -->
+    <div class="loading">
+        <img src="./img/space_loading.gif" class="img-fluid" width="300px" loading="lazy" />
+    </div>
+
     <section id="space">
         <video autoplay muted loop>
             <source src="./videos/space_rocket.mp4" type="video/mp4">
@@ -30,10 +48,10 @@
         <div class="container col-xxl-8 px-4 py-md-5">
             <div class="row flex-lg-row-reverse align-items-center g-5">
                 <div class="col-xl-6 p-0 d-flex justify-content-center">
-                    <img src="./img/about-img.jpg" class="img-fluid">
+                    <img src="./img/about-img.webp" class="img-fluid" loading="lazy" />
                 </div>
                 <div class="col-xl-6">
-                    <img src="./img/about-title.png" class="img-fluid mb-md-2 mb-xxl-5" id="about-title">
+                    <img src="./img/about-title.webp" class="img-fluid mb-md-2 mb-xxl-5" id="about-title" loading="lazy" />
                     <div class="about">
                         <h2 class="my-3 my-md-0">Somos a SpaceSheep!</h2>
                         <h5 class="mb-3">
@@ -58,78 +76,86 @@
             <div class="container">
                 <div class="row g-5">
                     <div class="col-lg-6">
-                        <div class="card" id="card-1">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <img src="./img/business-1.png" class="img-fluid">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Produção Audiovisual</h5>
-                                        <p class="card-text">Desenvolvemos conteúdos audiovisuais, envolvendo
-                                            filmagem, áudio, fotografia, roteiro e edição. Possuímos uma estrutura
-                                            completa para a produção e distribuição de conteúdos publicitários e
-                                            artísticos.</p>
+                        <a href="briefing.html">
+                            <div class="card" id="card-1">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="./img/business-1.webp" class="img-fluid" loading="lazy" />
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Produção Audiovisual</h5>
+                                            <p class="card-text">Desenvolvemos conteúdos audiovisuais, envolvendo
+                                                filmagem, áudio, fotografia, roteiro e edição. Possuímos uma estrutura
+                                                completa para a produção e distribuição de conteúdos publicitários e
+                                                artísticos.</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
+                            </div> <!-- /.card -->
+                        </a>
                     </div>
                     <div class="col-lg-6">
-                        <div class="card" id="card-2">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <img src="./img/business-2.png" class="img-fluid">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Branding</h5>
-                                        <p class="card-text">Trabalhamos sua marca, utilizando de diversos
-                                            instrumentos, criando uma identidade visual impactante que una seus
-                                            valores e seus diferenciais, gerando destaque e
-                                            reconhecimento no mercado.</p>
+                        <a href="briefing.html">
+                            <div class="card" id="card-2">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="./img/business-2.webp" class="img-fluid" loading="lazy" />
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Branding</h5>
+                                            <p class="card-text">Trabalhamos sua marca, utilizando de diversos
+                                                instrumentos, criando uma identidade visual impactante que una seus
+                                                valores e seus diferenciais, gerando destaque e
+                                                reconhecimento no mercado.</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
+                            </div> <!-- /.card -->
+                        </a>
                     </div>
                     <div class="col-lg-6">
-                        <div class="card" id="card-3">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <img src="./img/business-3.png" class="img-fluid">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Gestão de Mídias Sociais</h5>
-                                        <p class="card-text">Buscamos a melhor forma de comunicação para o seu
-                                            negócio, levando a sua marca para os espaços onde seu público está,
-                                            gerando interação e engajamento nas mídias sociais.</p>
+                        <a href="briefing.html">
+                            <div class="card" id="card-3">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="./img/business-3.webp" class="img-fluid" loading="lazy">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Gestão de Mídias Sociais</h5>
+                                            <p class="card-text">Buscamos a melhor forma de comunicação para o seu
+                                                negócio, levando a sua marca para os espaços onde seu público está,
+                                                gerando interação e engajamento nas mídias sociais.</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
+                            </div> <!-- /.card -->
+                        </a>
                     </div>
                     <div class="col-lg-6">
-                        <div class="card" id="card-4">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <img src="./img/business-4.png" class="img-fluid">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Estratégia de marketing</h5>
-                                        <p class="card-text">Analisamos o perfil da sua empresa e oferecemos a
-                                            melhor estratégia de marketing para o seu crescimento, inserindo a sua
-                                            marca, de forma promissora, no mercado.</p>
+                        <a href="briefing.html">
+                            <div class="card" id="card-4">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="./img/business-4.webp" class="img-fluid" loading="lazy" />
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Estratégia de marketing</h5>
+                                            <p class="card-text">Analisamos o perfil da sua empresa e oferecemos a
+                                                melhor estratégia de marketing para o seu crescimento, inserindo a sua
+                                                marca, de forma promissora, no mercado.</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
+                            </div> <!-- /.card -->
+                        </a>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div> <!-- /.container -->
+        </div> <!-- /.container-fluid -->
         <a href="#values" class="scroll d-none d-xl-block"><span></span></a>
     </section>
     <section id="values">
@@ -138,7 +164,7 @@
                 <div class="col-xl-6">
                     <div class="col d-flex align-items-start" id="value-1">
                         <div class=" flex-shrink-0 me-3">
-                            <img src="./img/target.svg" width="50px" class="img-fluid" />
+                            <img src="./img/target.svg" width="50px" class="img-fluid" loading="lazy" />
                         </div>
                         <div>
                             <h2>Missão</h2>
@@ -150,7 +176,7 @@
                     </div>
                     <div class="col d-flex align-items-start" id="value-2">
                         <div class=" flex-shrink-0 me-3">
-                            <img src="./img/eye.svg" width="50px" class="img-fluid">
+                            <img src="./img/eye.svg" width="50px" class="img-fluid" loading="lazy" />
                         </div>
                         <div>
                             <h2>Visão</h2>
@@ -163,7 +189,7 @@
                     </div>
                     <div class="col d-flex align-items-start" id="value-3">
                         <div class=" flex-shrink-0 me-3">
-                            <img src="./img/chat.svg" width="50px" class="img-fluid" />
+                            <img src="./img/chat.svg" width="50px" class="img-fluid" loading="lazy" />
                         </div>
                         <div>
                             <h2>Valores</h2>
@@ -186,23 +212,23 @@
                     <div class="col-lg-7 p-5">
                         <div class="row">
                             <div class="col-6 d-flex align-items-center px-3 px-xl-5" id="partner-1">
-                                <img src="./img/ltw.png" class="img-fluid">
+                                <img src="./img/ltw.webp" class="img-fluid" loading="lazy" />
                             </div>
                             <div class="col-6 d-flex align-items-center px-3 px-xl-5" id="partner-2">
-                                <img src="./img/real.png" class="img-fluid">
+                                <img src="./img/real.webp" class="img-fluid" loading="lazy" />
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-6 d-flex align-items-center px-3 px-xl-5 g-5" id="partner-3">
-                                <img src="./img/flow_estudios.png" class="img-fluid">
+                                <img src="./img/flow_estudios.webp" class="img-fluid" loading="lazy" />
                             </div>
                             <div class="col-6 d-flex align-items-center px-3 px-xl-5 g-5" id="partner-4">
-                                <img src="./img/bflow.png" class="img-fluid">
+                                <img src="./img/bflow.webp" class="img-fluid" loading="lazy" />
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-5 d-flex align-items-end">
-                        <img src="./img/partners-img.svg" class="img-fluid" id="partner-img">
+                        <img src="./img/partners-img.svg" class="img-fluid" id="partner-img" loading="lazy" />
                     </div>
                 </div>
             </div>
@@ -248,7 +274,8 @@
             </div>
         </div>
     </section>
-    <script src="./js/index.js"></script>
+
+    <!-- GOOGLE MAPS -->
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKQpqgwvF6J2LGoPARTn5GQbVC2VKLM3o&callback=initMap"></script>
 </body>

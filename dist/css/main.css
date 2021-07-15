@@ -59,7 +59,7 @@ p {
 }
 
 #business {
-  background: url(../img/business-bg.jpg);
+  background: url(../img/business-bg.webp);
   background-repeat: no-repeat;
   background-position: center;
   -webkit-box-pack: center;
@@ -90,7 +90,7 @@ p {
 }
 
 #values {
-  background: url(../img/values-bg.jpg);
+  background: url(../img/values-bg.webp);
   background-repeat: no-repeat;
   background-position: center;
   -webkit-box-pack: center;
@@ -106,7 +106,7 @@ p {
 }
 
 #partners {
-  background: url(../img/partners-bg.jpg);
+  background: url(../img/partners-bg.webp);
   background-size: cover;
 }
 
@@ -169,6 +169,10 @@ p {
 
 section {
   position: relative;
+}
+
+a {
+  text-decoration: none !important;
 }
 
 a.scroll {
@@ -238,6 +242,26 @@ a.scroll span::before {
 
 .bg-darker {
   background: #1d252d;
+}
+
+.loading {
+  background-color: #303030;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  position: fixed;
+  z-index: 1040;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  left: 0;
+  top: 0;
 }
 
 @-webkit-keyframes rotate {
