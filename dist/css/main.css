@@ -1,5 +1,4 @@
 html {
-  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -7,40 +6,35 @@ p {
   color: #E8E8E8;
 }
 
-#parallax {
-  -webkit-animation: gradient 30s linear infinite;
-          animation: gradient 30s linear infinite;
-  background: url(../img/parallax-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 110% 110%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+#space {
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   height: 100vh;
+  width: 100%;
 }
 
-#parallax .scene {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  width: 100%;
+#space video {
+  position: relative;
+  height: auto;
+  width: 100vw;
+}
+
+@media (max-width: 1919px) {
+  #space {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #space video {
+    position: relative;
+    height: 100vh;
+    width: auto;
+  }
 }
 
 #about {
@@ -173,12 +167,77 @@ p {
   border-radius: 5px;
 }
 
-.bg-darker {
-  background: #1d252d;
+section {
+  position: relative;
 }
 
-::-webkit-scrollbar {
-  width: 0;
+a.scroll {
+  font: normal 400 20px/1 "Josefin Sans", sans-serif;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  display: inline-block;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  position: absolute;
+  color: #fff;
+  bottom: 10%;
+  left: 50%;
+}
+
+a.scroll:hover {
+  opacity: 0.5;
+}
+
+a.scroll span {
+  border: 1px solid #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 100%;
+  position: absolute;
+  margin-left: -23px;
+  height: 46px;
+  width: 46px;
+  left: 50%;
+  top: 0;
+}
+
+a.scroll span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: "";
+  width: 16px;
+  height: 16px;
+  margin: -12px 0 0 -8px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a.scroll span::before {
+  -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+          box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+  -webkit-animation: pin 3s infinite;
+          animation: pin 3s infinite;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 100%;
+  position: absolute;
+  height: 44px;
+  width: 44px;
+  content: "";
+  opacity: 0;
+  left: 0;
+  top: 0;
+}
+
+.bg-darker {
+  background: #1d252d;
 }
 
 @-webkit-keyframes rotate {
@@ -291,11 +350,6 @@ p {
   }
 }
 
-/*@media (max-width: 1399px) {
-    #about {
-        padding: 2rem 3rem;
-    }
-}*/
 @media (max-width: 1199px) {
   #business {
     background: #fff;
@@ -313,68 +367,7 @@ p {
   }
   section {
     min-height: 100vh;
-    position: relative;
     scroll-snap-align: center;
-  }
-  a.scroll {
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    display: inline-block;
-    -webkit-transform: translate(0, -50%);
-            transform: translate(0, -50%);
-    color: #fff;
-    font: normal 400 20px/1 "Josefin Sans", sans-serif;
-    letter-spacing: 0.1em;
-    text-decoration: none;
-    -webkit-transition: opacity 0.3s;
-    transition: opacity 0.3s;
-  }
-  a.scroll:hover {
-    opacity: 0.5;
-  }
-  a.scroll span {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 46px;
-    height: 46px;
-    margin-left: -23px;
-    border: 1px solid #fff;
-    border-radius: 100%;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  a.scroll span::after {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    content: "";
-    width: 16px;
-    height: 16px;
-    margin: -12px 0 0 -8px;
-    border-left: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  a.scroll span::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    width: 44px;
-    height: 44px;
-    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
-            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
-    border-radius: 100%;
-    opacity: 0;
-    -webkit-animation: pin 3s infinite;
-            animation: pin 3s infinite;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
   }
   #business {
     background-size: 100% 100%;

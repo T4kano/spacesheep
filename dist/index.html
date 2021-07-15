@@ -5,55 +5,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Eduardo Takano">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./img/favicon.ico" />
+
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
     <link rel="stylesheet" href="./css/custom.css">
     <link rel="stylesheet" href="./css/main.css">
+    
     <title>Spacesheep</title>
 </head>
 
 <body>
-    <section id="parallax">
-        <img src="./img/logo.png" width="200px" class="img-fluid">
-        <div class="scene d-none d-lg-flex">
-            <img src="./img/planets.png" class="img-fluid layer" data-depth="0.1">
-            <img src="./img/stars.png" class="img-fluid layer" data-depth="0.06">
-        </div>
+    <section id="space">
+        <video autoplay muted loop>
+            <source src="./videos/space_rocket.mp4" type="video/mp4">
+        </video>
         <a href="#about" class="scroll"><span></span></a>
     </section>
     <section id="about">
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row flex-lg-row-reverse align-items-center g-5 p-0 py-xl-5">
-                    <div class="col-lg-6 p-0">
-                        <div class="about-img">
-                            <img src="./img/about-img.jpg" class="img-fluid">
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <img src="./img/about-title.png" class="img-fluid mb-md-2 mb-xxl-5" id="about-title">
-                        <div class="about">
-                            <h2 class="my-3 my-md-0">Somos a SpaceSheep!</h2>
-                            <h5 class="mb-3">
-                                Uma produtora audiovisual nascida em 2021, no interior de São Paulo.
-                            </h5>
-                            <p>Atendemos demandas institucionais, publicitárias e artísticas, em toda e qualquer
-                                plataforma ou tela.
-                            </p>
-                            <p>Para nós, cada trabalho é único e será planejado com paixão e dedicação, para que a sua
-                                mensagem seja transmitida de forma clara e criativa, unindo áudio, imagem e texto.
-                                Disponibilizamos equipamentos de excelência e temos uma equipe diversificada e
-                                talentosa, garantindo a originalidade e a qualidade dos nossos projetos.
-                            </p>
-                        </div>
-                        <img src="./img/wave.svg" class="img-fluid mb-2" id="stripe">
+        <div class="container col-xxl-8 px-4 py-md-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5">
+                <div class="col-xl-6 p-0 d-flex justify-content-center">
+                    <img src="./img/about-img.jpg" class="img-fluid">
+                </div>
+                <div class="col-xl-6">
+                    <img src="./img/about-title.png" class="img-fluid mb-md-2 mb-xxl-5" id="about-title">
+                    <div class="about">
+                        <h2 class="my-3 my-md-0">Somos a SpaceSheep!</h2>
+                        <h5 class="mb-3">
+                            Uma produtora audiovisual nascida em 2021, no interior de São Paulo.
+                        </h5>
+                        <p>Atendemos demandas institucionais, publicitárias e artísticas, em toda e qualquer
+                            plataforma ou tela.
+                        </p>
+                        <p>Para nós, cada trabalho é único e será planejado com paixão e dedicação, para que a sua
+                            mensagem seja transmitida de forma clara e criativa, unindo áudio, imagem e texto.
+                            Disponibilizamos equipamentos de excelência e temos uma equipe diversificada e
+                            talentosa, garantindo a originalidade e a qualidade dos nossos projetos.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-        <a href="#business" class="scroll"><span></span></a>
+        <a href="#business" class="scroll d-none d-xl-block"><span></span></a>
     </section>
     <section id="business">
         <div class="container-fluid py-5">
@@ -132,12 +130,12 @@
                 </div>
             </div>
         </div>
-        <a href="#values" class="scroll"><span></span></a>
+        <a href="#values" class="scroll d-none d-xl-block"><span></span></a>
     </section>
     <section id="values">
         <div class="container-fluid">
-            <div class="row g-xl-5">
-                <div class="col-lg-6 ps-lg-5">
+            <div class="row py-5 px-4">
+                <div class="col-xl-6">
                     <div class="col d-flex align-items-start" id="value-1">
                         <div class=" flex-shrink-0 me-3">
                             <img src="./img/target.svg" width="50px" class="img-fluid" />
@@ -179,7 +177,7 @@
                 </div>
             </div>
         </div>
-        <a href="#partners" class="scroll"><span></span></a>
+        <a href="#partners" class="scroll d-none d-xl-block"><span></span></a>
     </section>
     <section id="partners">
         <div class="container-fluid">
@@ -243,14 +241,13 @@
                     </div>
                     <div class="col-6 d-flex justify-content-end">
                         <a href="https://www.instagram.com/spacesheepprodutora" target="_blank">
-                            <img src="./img/instagram.png" width="24px" class="img-fluid">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <script src="./js/parallax.min.js"></script>
     <script src="./js/index.js"></script>
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKQpqgwvF6J2LGoPARTn5GQbVC2VKLM3o&callback=initMap"></script>

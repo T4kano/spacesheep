@@ -11503,10 +11503,18 @@ fieldset:disabled .btn {
   }
 }
 
-.form-control {
+.form-control, .form-select {
   background-color: #354453;
-  border: 1px solid #ffae1a;
-  -webkit-box-shadow: 7px 7px 10px 0 #fff;
-          box-shadow: 7px 7px 10px 0 #fff;
+  border: none;
+  border-left: 1px solid #ffae1a;
+  border-right: 1px solid #ffae1a;
+}
+
+.form-control:focus, .form-select:focus {
+  background-color: #27323D;
+}
+
+.form-select {
+  background-image: url(../img/select.svg);
 }
 /*# sourceMappingURL=custom.css.map */

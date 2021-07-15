@@ -1,0 +1,26 @@
+#space {
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    
+    video {
+        position: relative;
+        height: auto;
+        width: 100vw;
+    }
+}
+
+@media (max-width: 1919px) {
+
+    #space {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+        video {
+            position: relative;
+            height: 100vh;
+            width: auto;
+        }
+    }
+}
