@@ -1,3 +1,7 @@
+.bg-darker {
+  background-color: #1d252d;
+}
+
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -6623,10 +6627,10 @@ fieldset:disabled .btn {
   margin-right: -100%;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  -webkit-transition: -webkit-transform 0.6s ease-in-out;
-  transition: -webkit-transform 0.6s ease-in-out;
-  transition: transform 0.6s ease-in-out;
-  transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -6675,8 +6679,8 @@ fieldset:disabled .btn {
 .carousel-fade .active.carousel-item-end {
   z-index: 0;
   opacity: 0;
-  -webkit-transition: opacity 0s 0.6s;
-  transition: opacity 0s 0.6s;
+  -webkit-transition: opacity 0s 1s;
+  transition: opacity 0s 1s;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -11516,5 +11520,22 @@ fieldset:disabled .btn {
 
 .form-select {
   background-image: url(../img/select.svg);
+}
+
+nav.navbar.bg-darker {
+  background-color: rgba(29, 37, 45, 0.5) !important;
+}
+
+nav.navbar .btn-primary {
+  background-color: rgba(255, 174, 26, 0.5);
+  font-weight: 500;
+  color: #fff;
+  border: none;
+}
+
+nav.navbar .btn-primary:hover {
+  background-color: rgba(255, 174, 26, 0.8);
+  -webkit-box-shadow: 0 0 0 3px rgba(255, 174, 26, 0.3);
+          box-shadow: 0 0 0 3px rgba(255, 174, 26, 0.3);
 }
 /*# sourceMappingURL=custom.css.map */

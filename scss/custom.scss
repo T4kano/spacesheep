@@ -1,5 +1,7 @@
 @import "settings";
 
+$carousel-transition-duration: 1s;
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 .form-control, .form-select {
@@ -15,4 +17,22 @@
 
 .form-select {
     background-image: url(../img/select.svg);    
+}
+
+nav.navbar {
+    &.bg-darker {
+        background-color: rgba($color: $darker, $alpha: 0.5) !important;
+    }
+
+    .btn-primary {
+        background-color: rgba($color: $primary, $alpha: 0.5);
+        font-weight: 500;
+        color: #fff;
+        border: none;
+
+        &:hover {
+            background-color: rgba($color: $primary, $alpha: 0.8);
+            box-shadow: 0 0 0 3px rgba($color: $primary, $alpha: 0.3);
+        }
+    }
 }

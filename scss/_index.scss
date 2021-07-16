@@ -30,6 +30,7 @@ a.scroll {
     position: absolute;
     color: #fff;
     bottom: 10%;
+    z-index: 1;
     left: 50%;
 
     &:hover {
@@ -75,10 +76,6 @@ a.scroll {
             top: 0;
         }
     }
-}
-
-.bg-darker {
-    background: $darker;
 }
 
 .loading {

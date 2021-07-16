@@ -1,3 +1,7 @@
+.bg-darker {
+  background-color: #1d252d;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -187,6 +191,7 @@ a.scroll {
   position: absolute;
   color: #fff;
   bottom: 10%;
+  z-index: 1;
   left: 50%;
 }
 
@@ -238,10 +243,6 @@ a.scroll span::before {
   opacity: 0;
   left: 0;
   top: 0;
-}
-
-.bg-darker {
-  background: #1d252d;
 }
 
 .loading {
