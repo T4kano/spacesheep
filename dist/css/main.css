@@ -10,37 +10,38 @@ p {
   color: #E8E8E8;
 }
 
-#space {
-  overflow: hidden;
-  height: 100vh;
-  width: 100%;
-}
-
-#space video {
-  position: relative;
-  height: auto;
-  width: 100vw;
-}
-
-@media (max-width: 1919px) {
-  #space {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+@media (min-width: 1200px) {
+  #banner {
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  #space video {
-    position: relative;
-    height: 100vh;
-    width: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
+/*
+@media (max-width: 1919px) {
+
+    #space {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+        video {
+            position: relative;
+            height: 100vh;
+            width: auto;
+        }
+    }
+}*/
 #about {
   -webkit-box-pack: center;
       -ms-flex-pack: center;

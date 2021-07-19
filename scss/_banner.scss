@@ -1,15 +1,15 @@
-#space {
-    overflow: hidden;
-    height: 100vh;
-    width: 100%;
-    
-    video {
-        position: relative;
-        height: auto;
-        width: 100vw;
+@media (min-width: 1200px) {
+    #banner {
+        overflow: hidden;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
+/*
 @media (max-width: 1919px) {
 
     #space {
@@ -23,4 +23,4 @@
             width: auto;
         }
     }
-}
+}*/
