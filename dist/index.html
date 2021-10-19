@@ -13,34 +13,73 @@
     <meta author="Eduardo Takano">
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="pr
+    econnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
-    <!-- FAVICON -->
+    <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.ico" />
 
-    <!-- jQUERY -->
+    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-    <!-- BOOTSTRAP-->
-    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
 
-    <!-- INDEX JS -->
-    <!-- <script src="./js/index.js"></script> -->
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/index.css" />
 
-    <!-- STYLES -->
-    <link rel="stylesheet" href="./css/custom.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css" />
 
-    <!-- TITLE -->
+    <!-- Title -->
     <title>Spacesheep Produtora</title>
 </head>
 
 <body>
-    <h1>Hello World!</h1>
+    <header>
+        <nav class="container">
+            <a href="/">
+                <img class="nav__brand" src="img/spacesheep_brand.svg" alt="Spacesheep Logo" />
+            </a>
+            <div class="nav__toggler">
+                <div class="__1"></div>
+                <div class="__2"></div>
+                <div class="__3"></div>
+            </div>
+            <ul class="nav__list">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Quem somos</a></li>
+                <li><a href="#" class="btn btn-primary">Fale conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <div class="container-fluid banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 py-5">
+                    <h1>SPACE<span class="text-primary">SHEEP</span><br>PRODUTORA</h1>
+                    <p>Nós temos o conhecimento e as ferramentas para potencializar o crescimento da sua marca.</p>
+                    <p>Você precisa de mais audiência? Precisa vender mais? Temos a solução ideal para você.</p>
+                    <a class="btn btn-primary btn-lg">Receber uma proposta</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="img/ilustracao_ovelha.svg" alt="Ilustração ovelha" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Index JS -->
+    <script src="js/index.js"></script>
 </body>
 
 </html>
