@@ -26,3 +26,11 @@
 @import "../node_modules/bootstrap/scss/utilities/api";
 
 // 6. Add additional custom code here
+.btn {
+  border-radius: 50px;
+  transition: all .2s linear;
+
+  &-lg:hover {
+    transform: translateY(-.3rem);
+  }
+}

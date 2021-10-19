@@ -19,26 +19,48 @@ p {
 }
 
 .banner {
-  padding: 3rem 0;
+  padding: 6rem 0;
 
   h1 {
     color: #fff;
-    font-size: 30px;
+    font-size: 3em;
     font-weight: 800;
     margin-bottom: 40px;
   }
 
   p {
-    color: #E5E5E5;
+    font-size: 22px;
+    color: #DEDEDE;
     font-weight: 300;
     margin-bottom: 30px;
+
+    &.contrast {
+      font-size: 28px;
+      font-weight: 400;
+    }
+  }
+
+  .btn {
+    margin-top: 1rem;
+    padding: .7rem 3rem;
+  }
+
+  span, b {
+    color: $primary;
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
   .banner {
+    font-size: 24px;
+    padding: 4rem 0;
+
     h1 {
       font-size: 100px;
+    }
+
+    .btn {
+      font-size: 26px;
     }
   }
 }

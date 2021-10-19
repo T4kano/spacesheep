@@ -19,7 +19,6 @@ class MobileNavbar {
     }
 
     handleClick() {
-        console.log(this);
         this.navList.classList.toggle(this.activeClass);
         this.toggler.classList.toggle(this.activeClass);
         this.animateLinks();
@@ -30,9 +29,7 @@ class MobileNavbar {
     }
 
     init() {
-        console.log("opa 1")
         if (this.toggler) {
-            console.log("opa 2");
             this.addClickEvent();
         }
         return this;

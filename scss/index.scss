@@ -3,4 +3,76 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+
+  .sheep {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    padding-top: 8rem;
+    animation: sheepFade 1s ease;
+  }
+}
+
+.intro {
+  padding-top: 5rem;
+
+  p {
+    font-size: 18px;
+  }
+
+  img {
+    border-radius: 6px;
+  }
+}
+
+.slider {
+  width: 100%;
+
+  .owl-stage {
+    display: flex;
+    align-items: center;
+
+    .owl-item {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .carousel {
+    z-index: -1;
+  }
+
+  .card {
+    max-width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .banner {
+    background-position: 100% 100%;
+
+    .sheep {
+      padding-top: 5rem;
+    }
+
+    .btn {
+      width: 100%;
+    }
+  }
+}
+
+@keyframes sheepFade {
+  from {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
 }

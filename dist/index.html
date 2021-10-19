@@ -37,6 +37,10 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css" />
 
+    <!-- OwlCarousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
     <!-- Title -->
     <title>Spacesheep Produtora</title>
 </head>
@@ -61,25 +65,119 @@
         </nav>
     </header>
 
-    <!-- Banner -->
+    <!-- Banner Start -->
     <div class="container-fluid banner">
-        <div class="container">
+        <div class="container py-xl-5">
             <div class="row">
-                <div class="col-lg-6 py-5">
-                    <h1>SPACE<span class="text-primary">SHEEP</span><br>PRODUTORA</h1>
-                    <p>Nós temos o conhecimento e as ferramentas para potencializar o crescimento da sua marca.</p>
-                    <p>Você precisa de mais audiência? Precisa vender mais? Temos a solução ideal para você.</p>
+                <div class="col-lg-7">
+                    <h1>SPACE<span>SHEEP</span><br>PRODUTORA</h1>
+                    <p class="contrast">Nós temos o <b>conhecimento</b> e as <b>ferramentas</b> para potencializar o
+                        crescimento da sua
+                        marca.</p>
+                    <p>Você precisa de mais audiência? Precisa vender mais? Temos a solução <span>ideal</span> para
+                        você.</p>
                     <a class="btn btn-primary btn-lg">Receber uma proposta</a>
                 </div>
-                <div class="col-lg-6">
-                    <img src="img/ilustracao_ovelha.svg" alt="Ilustração ovelha" />
+                <div class="col-lg-5 sheep">
+                    <img src="img/ilustracao_ovelha.svg" alt="Ilustração ovelha" class="img-responsive" />
                 </div>
             </div>
         </div>
     </div>
+    <!-- Banner End -->
+
+    <!-- Intro Start -->
+    <div class="container intro">
+        <div class="row">
+            <div class="col-lg-6">
+                <h1 class="mb-4"><strong>A produtora mais topzera de Indaiatuba!</strong></h1>
+                <p>Uma produtora audiovisual nascida no interior de São Paulo, que desenvolve demandas
+                    publicitárias, institucionais e artísticas, em toda e qualquer plataforma.</p>
+                <p>Para nós, cada trabalho é único, por isso desenvolvemos com paixão e dedicação, para que a sua
+                    mensagem seja transmitida de forma clara e criativa, unindo áudio, imagem e texto.</p>
+                <p>Para entregar projetos com excelência contamos formado por profissionais altamente capacitados e
+                    movidos pelo mesmo propósito: atender e surpreender pessoas.</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="img/foto_equipe_spacesheep_01.jpg" alt="Foto da equipe Spacesheep" class="img-fluid" />
+            </div>
+        </div>
+    </div>
+    <!-- Intro End -->
+
+    <!-- Slider Start -->
+    <div class="container slider py-5">
+        <div class="carousel owl-carousel">
+            <div class="card">
+                <img src="img/logo_ltw_consult.svg" alt="Logo LTW Consult" />
+            </div>
+            <div class="card">
+                <img src="img/logo_real.svg" alt="Logo Real Podcast" />
+            </div>
+            <div class="card">
+                <img src="img/logo_bflow.svg" alt="Logo B-Flow Crew" />
+            </div>
+            <div class="card">
+                <img src="img/logo_diario_consult.svg" alt="Logo Diário Consult" />
+            </div>
+        </div>
+    </div>
+    <!-- Slider End -->
+
+    <!-- Services Start -->
+    <div class="container services">
+        <div class="row">
+            <h1>Teste</h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 card">
+                <div class="card-icon"></div>
+                <h1>teste</h1>
+                <p>teste</p>
+            </div>
+            <div class="col-lg-3 card">
+                <div class="card-icon"></div>
+                <h1>teste</h1>
+                <p>teste</p>
+            </div>
+            <div class="col-lg-3 card">
+                <div class="card-icon"></div>
+                <h1>teste</h1>
+                <p>teste</p>
+            </div>
+            <div class="col-lg-3 card">
+                <div class="card-icon"></div>
+                <h1>teste</h1>
+                <p>teste</p>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
 
     <!-- Index JS -->
     <script src="js/index.js"></script>
+    <script>
+        $(".carousel").owlCarousel({
+            margin: 20,
+            loop: true,
+            autoplay: true,
+            center: true,
+            autoplayHoverPause: true,
+            rewindNav: false,
+            rewindSpeed: 0,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 2,
+                    nav: false
+                },
+                1000: {
+                    items: 4,
+                    nav: false
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>
