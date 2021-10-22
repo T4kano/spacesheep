@@ -1,0 +1,122 @@
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-title;
+}
+
+p {
+  color: $text-muted-color;
+}
+
+.banner {
+  padding: 6rem 0;
+
+  h1 {
+    color: #fff;
+    font-size: 3em;
+    font-weight: 800;
+    margin-bottom: 40px;
+  }
+
+  p {
+    font-size: 22px;
+    color: #DEDEDE;
+    font-weight: 300;
+    margin-bottom: 30px;
+
+    &.contrast {
+      font-size: 28px;
+      font-weight: 400;
+    }
+  }
+
+  .btn {
+    margin-top: 1rem;
+    padding: .7rem 3rem;
+  }
+
+  span,
+  b {
+    color: $primary;
+  }
+}
+
+.card {
+  //padding: 0 .5rem;
+  transition: all .7s ease-out;
+
+  &__content {
+    cursor: pointer;
+    position: relative;
+    transition: all .2s linear;
+    border-radius: 10px;
+    height: 400px;
+    padding: 2rem;
+    background-color: #f7f7f7;
+    overflow: hidden;
+    transition: all .7s ease-out;
+
+    h1 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    &:hover {
+      p {
+        color: #C4C4C4;
+      }
+      color: #fff;
+      background-color: #121212;
+      box-shadow: 0 50px 20px -40px rgba($color: #121212, $alpha: 0.6);
+      .card__icon {
+        background-color: rgba($color: #3D3D3D, $alpha: 0.7);
+        border: 2px solid $primary;
+      }
+    }
+  }
+
+  &__icon {
+    transition: background-color .7s ease-out;
+    padding: 9px;
+    height: 50px;
+    width: 50px;
+    background-color: #fff;
+    margin-bottom: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    font-size: 26px;
+    color: $primary;
+  }
+}
+
+h1.title {
+  font: 44px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 1200px) {
+  .banner {
+    font-size: 24px;
+    padding: 4rem 0;
+
+    h1 {
+      font-size: 100px;
+    }
+
+    .btn {
+      font-size: 26px;
+    }
+  }
+}
