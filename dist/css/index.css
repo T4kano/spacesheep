@@ -20,10 +20,6 @@
           animation: sheepFade 1s ease;
 }
 
-.intro {
-  padding-top: 5rem;
-}
-
 .intro p {
   font-size: 18px;
 }

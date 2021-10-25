@@ -186,10 +186,11 @@ p {
   font-size: 3em;
   font-weight: 800;
   margin-bottom: 40px;
+  line-height: 50px;
 }
 
 .banner p {
-  font-size: 22px;
+  font-size: 20px;
   color: #DEDEDE;
   font-weight: 300;
   margin-bottom: 30px;
@@ -211,8 +212,8 @@ p {
 }
 
 .card {
-  -webkit-transition: all .7s ease-out;
-  transition: all .7s ease-out;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
 }
 
 .card__content {
@@ -225,8 +226,8 @@ p {
   padding: 2rem;
   background-color: #f7f7f7;
   overflow: hidden;
-  -webkit-transition: all .7s ease-out;
-  transition: all .7s ease-out;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
 }
 
 .card__content h1 {
@@ -280,6 +281,10 @@ h1.title {
   margin-bottom: 50px;
 }
 
+.btn {
+  font-family: "Poppins", system-ui, -apple-system, sans-serif;
+}
+
 @media (min-width: 1200px) {
   .banner {
     font-size: 24px;
@@ -287,6 +292,7 @@ h1.title {
   }
   .banner h1 {
     font-size: 100px;
+    line-height: 90px;
   }
   .banner .btn {
     font-size: 26px;
