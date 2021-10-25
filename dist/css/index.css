@@ -16,8 +16,8 @@
       -ms-flex-align: end;
           align-items: flex-end;
   padding-top: 8rem;
-  -webkit-animation: sheepFade 1s ease;
-          animation: sheepFade 1s ease;
+  -webkit-animation: sheepFade 2s ease;
+          animation: sheepFade 2s ease;
 }
 
 .intro p {

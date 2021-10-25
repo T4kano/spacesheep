@@ -1,0 +1,72 @@
+body {
+  background-color: #F5B512;
+}
+
+.centered {
+  position: relative;
+  top: -25px;
+}
+
+.centered .infobox {
+  text-align: center;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 4px solid #F5B512;
+  -webkit-box-shadow: 0 10px 30px -15px #121212;
+          box-shadow: 0 10px 30px -15px #121212;
+  margin-bottom: 40px;
+}
+
+.centered .infobox h1,
+.centered .infobox p,
+.centered .infobox span {
+  color: #121212;
+}
+
+.centered .infobox h1 {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.centered .infobox p {
+  font-size: 18px;
+}
+
+.centered .infobox p.contrast {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.centered .infobox span {
+  font-size: 10px;
+  color: #B2B2B2;
+  line-height: 28px;
+}
+
+.centered__content h1 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.centered__content p {
+  color: #3B2B02;
+  font-size: 20px;
+}
+
+@media (min-width: 1200px) {
+  .centered {
+    position: relative;
+    top: -70px;
+    text-align: center;
+  }
+  .centered .infobox {
+    margin-bottom: 80px;
+  }
+  .centered .infobox span {
+    font-size: 16px;
+  }
+  .centered__content h1 {
+    margin-bottom: 40px;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

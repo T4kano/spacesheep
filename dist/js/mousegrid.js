@@ -145,9 +145,11 @@ const mouseEnter = e => {
   mouseOver = true;
 };
 
-init();
-window.addEventListener("resize", init);
-TweenLite.ticker.addEventListener("tick", animate);
-c.addEventListener("mouseenter", mouseEnter);
-c.addEventListener("mouseleave", mouseLeave);
-c.addEventListener("mousemove", e => mouseMove(e));
+if (window.innerWidth > 991.98) {
+  init();
+  window.addEventListener("resize", init);
+  TweenLite.ticker.addEventListener("tick", animate);
+  c.addEventListener("mouseenter", mouseEnter);
+  c.addEventListener("mouseleave", mouseLeave);
+  c.addEventListener("mousemove", e => mouseMove(e));
+}

@@ -212,22 +212,21 @@ p {
 }
 
 .card {
-  -webkit-transition: all .5s ease-out;
-  transition: all .5s ease-out;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .card__content {
   cursor: pointer;
   position: relative;
-  -webkit-transition: all .2s linear;
-  transition: all .2s linear;
-  border-radius: 10px;
-  height: 400px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  border-radius: 8px;
   padding: 2rem;
   background-color: #f7f7f7;
   overflow: hidden;
-  -webkit-transition: all .5s ease-out;
-  transition: all .5s ease-out;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .card__content h1 {
@@ -250,14 +249,17 @@ p {
 .card__content:hover .card__icon {
   background-color: rgba(61, 61, 61, 0.7);
   border: 2px solid #F5B512;
+  -webkit-box-shadow: 0 7px 30px -15px #F5B512;
+          box-shadow: 0 7px 30px -15px #F5B512;
 }
 
 .card__icon {
-  -webkit-transition: background-color .7s ease-out;
-  transition: background-color .7s ease-out;
+  -webkit-transition: background-color .5s ease-in-out;
+  transition: background-color .5s ease-in-out;
   padding: 9px;
   height: 50px;
   width: 50px;
+  line-height: 0;
   background-color: #fff;
   margin-bottom: 26px;
   display: -webkit-box;
@@ -296,6 +298,9 @@ h1.title {
   }
   .banner .btn {
     font-size: 26px;
+  }
+  .card__content {
+    height: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */
