@@ -13,8 +13,7 @@
     <meta author="Eduardo Takano">
 
     <!-- Google Fonts -->
-    <link rel="pr
-    econnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
@@ -58,7 +57,7 @@
             </div>
             <ul class="nav__list">
                 <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">Serviços</a></li>
+                <!--<li><a href="#">Serviços</a></li>-->
                 <li><a href="sobre.html">Quem somos</a></li>
                 <li><a href="contato.html" class="btn btn-primary">Fale conosco</a></li>
             </ul>
@@ -79,7 +78,8 @@
                     <a class="btn btn-primary btn-lg">Receber uma proposta</a>
                 </div>
                 <div class="col-lg-5 sheep">
-                    <img src="img/ilustracao_ovelha.svg" alt="Ilustração ovelha" class="img-responsive" loading="lazy" />
+                    <img src="img/ilustracao_ovelha.svg" alt="Ilustração ovelha" class="img-responsive"
+                        loading="lazy" />
                 </div>
             </div>
         </div>
@@ -99,15 +99,16 @@
                     movidos pelo mesmo propósito: atender e surpreender pessoas.</p>
             </div>
             <div class="col-lg-6">
-                <img src="img/foto_equipe_spacesheep_01.jpg" alt="Foto da equipe Spacesheep" class="img-fluid" loading="lazy" />
+                <img src="img/foto_equipe_spacesheep_01.jpg" alt="Foto da equipe Spacesheep" class="img-fluid"
+                    loading="lazy" />
             </div>
         </div>
     </div>
     <!-- Intro End -->
 
     <!-- Slider Start -->
-    <div class="container slider py-5">
-        <div class="carousel owl-carousel">
+    <div class="container-fluid slider py-5 px-0">
+        <div class="carousel owl-carousel owl-theme">
             <div class="carousel-item">
                 <img src="img/logo_ltw_consult.svg" alt="Logo LTW Consult" />
             </div>
@@ -176,22 +177,40 @@
     </div> <!-- /container -->
     <!-- Services End -->
 
+    <footer>
+        <div class="container-fluid py-3">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-10">
+                        <span style="display: block;">Copyright © 2021 SpaceSheep | Todos direitos reservados</span>
+                        <a href="politicas-de-privacidade.html">Políticas de privacidade</a>
+                    </div>
+                    <div class="col-2 d-lg-flex justify-content-end">
+                        <div class="ig">
+                            <a href="https://www.instagram.com/spacesheepprodutora/" target="_blank">
+                                <img src="img/instagram.svg" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <!-- Index JS -->
     <script src="js/index.js"></script>
     <script>
         $(".carousel").owlCarousel({
-            margin: 20,
             loop: true,
             autoplay: true,
             center: true,
-            autoplayHoverPause: true,
-            dots: false,
+            margin: 20,
             responsive: {
                 0: {
                     items: 2
                 },
-                1000: {
-                    items: 4
+                1200: {
+                    items: 4,
                 }
             }
         });

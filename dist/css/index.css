@@ -50,10 +50,6 @@
           justify-content: center;
 }
 
-.slider .carousel {
-  z-index: -1;
-}
-
 .slider .carousel-item {
   max-width: 150px;
   display: -webkit-box;

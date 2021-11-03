@@ -1,0 +1,64 @@
+body {
+  background-color: #1a1e2d;
+}
+
+.bongo {
+  width: 80vw;
+  height: 80vh;
+}
+
+.bongo svg {
+  height: 100%;
+  width: 100%;
+  overflow: visible;
+}
+
+#bongo-cat {
+  fill: #1a1e2d;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 4;
+}
+
+#bongo-cat .laptop-cover,
+#bongo-cat .headphone .band {
+  fill: none;
+}
+
+#bongo-cat .paw,
+#bongo-cat .head {
+  stroke: #ffcc81;
+}
+
+#bongo-cat .laptop-keyboard {
+  stroke-width: 2;
+}
+
+#bongo-cat .terminal-code {
+  stroke-width: 5;
+}
+
+#bongo-cat .music .note,
+#bongo-cat .laptop-base,
+#bongo-cat .laptop-cover,
+#bongo-cat .paw .pads {
+  stroke: #ff61d8;
+}
+
+#bongo-cat .table line,
+#bongo-cat .headphone .band,
+#bongo-cat .headphone .speaker path:nth-child(3) {
+  stroke: #a5ea9b;
+}
+
+#bongo-cat .terminal-frame,
+#bongo-cat .laptop-keyboard,
+#bongo-cat .headphone .speaker path:nth-child(2) {
+  stroke: #569cfa;
+}
+
+#bongo-cat .terminal-code,
+#bongo-cat .headphone .speaker path:first-child {
+  stroke: #7ed1e2;
+}
+/*# sourceMappingURL=briefing.css.map */

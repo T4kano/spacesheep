@@ -70,13 +70,15 @@ p {
     }
 
     &:hover {
+      color: #fff;
+      transform: scale(1.01);
+      background-color: #121212;
+      z-index: 10;
+      box-shadow: 0 50px 20px -40px rgba($color: #121212, $alpha: 0.6);
+
       p {
         color: #C4C4C4;
       }
-
-      color: #fff;
-      background-color: #121212;
-      box-shadow: 0 50px 20px -40px rgba($color: #121212, $alpha: 0.6);
 
       .card__icon {
         background-color: rgba($color: #3D3D3D, $alpha: 0.7);
