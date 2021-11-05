@@ -6,10 +6,13 @@ header {
   position: fixed;
   width: 100%;
   z-index: 1000;
-  
+
   nav {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
     align-items: center;
     height: 7vh;
     padding: 0 4rem;
@@ -19,6 +22,7 @@ header {
     color: #fff;
     text-decoration: none;
     transition: all .3s ease;
+    line-height: 0;
 
     &:hover {
       color: $primary;
@@ -68,7 +72,9 @@ header {
 }
 
 @media (max-width: 991.98px) {
-  html, body {
+
+  html,
+  body {
     position: relative;
     overflow-x: hidden !important;
   }
@@ -107,7 +113,9 @@ header {
   from {
     opacity: 0;
     transform: translateX(50px);
-  } to {
+  }
+
+  to {
     opacity: 1;
   }
 }
@@ -116,9 +124,11 @@ header {
   .__1 {
     transform: rotate(-315deg) translate(4px, 8px);
   }
+
   .__2 {
     opacity: 0;
   }
+
   .__3 {
     transform: rotate(315deg) translate(3px, -7px);
   }

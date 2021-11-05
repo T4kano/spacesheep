@@ -16,6 +16,9 @@ header nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -28,6 +31,7 @@ header a {
   text-decoration: none;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
+  line-height: 0;
 }
 
 header a:hover {
@@ -85,7 +89,8 @@ header a.active {
 }
 
 @media (max-width: 991.98px) {
-  html, body {
+  html,
+  body {
     position: relative;
     overflow-x: hidden !important;
   }
@@ -307,29 +312,47 @@ h1.title {
   }
 }
 
-footer {
+.footer {
   background: #121212;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #5E5E5E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.footer__l {
+  width: 90%;
+}
+
+.footer__r {
+  width: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #C4C4C4;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
-footer a {
+.footer a {
   width: 100%;
   height: 100%;
   text-decoration: none;
-  color: #C4C4C4;
+  color: #787878;
 }
 
-footer a:hover {
+.footer a:hover {
   color: #F5B512;
 }
 
-footer .ig {
+.footer .ig {
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   -webkit-box-pack: center;
@@ -345,11 +368,11 @@ footer .ig {
       -ms-flex-align: center;
           align-items: center;
   padding: 4px;
-  background: #454545;
+  background: #333333;
   border-radius: 100%;
 }
 
-footer .ig:hover {
+.footer .ig:hover {
   -webkit-box-shadow: 0 2px 12px rgba(245, 181, 18, 0.3);
           box-shadow: 0 2px 12px rgba(245, 181, 18, 0.3);
   -webkit-transform: scale(1.04);

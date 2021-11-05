@@ -30,7 +30,7 @@
   border-radius: 50px;
   transition: all .2s linear;
 
-  &-lg:hover {
-    transform: translateY(-.3rem);
+  &:hover {
+    transform: translateY(-.2rem);
   }
 }
