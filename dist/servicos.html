@@ -31,6 +31,33 @@
 
   <!-- Title -->
   <title>Serviços Spacesheep</title>
+
+  <!-- Facebook Pixel Code -->
+  <script>
+    ! function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '345396790676965');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=345396790676965&ev=PageView&noscript=1" /></noscript>
+  <!-- End Facebook Pixel Code -->
 </head>
 
 <body>
@@ -69,9 +96,9 @@
         <div class="col">
           <div class="wrapper">
             <div class="midia">
-              <img src="img/social01.png" class="social__01" />
-              <img src="img/social02.png" class="social__02" />
-              <img src="img/social03.png" class="social__03" />
+              <img src="img/social01.webp" class="social__01" />
+              <img src="img/social02.webp" class="social__02" />
+              <img src="img/social03.webp" class="social__03" />
             </div>
           </div>
         </div>
@@ -92,9 +119,9 @@
         <div class="col">
           <div class="wrapper">
             <div class="midia">
-              <img src="img/identity01.png" class="identity__01" />
-              <img src="img/identity02.png" class="identity__02" />
-              <img src="img/identity03.png" class="identity__03" />
+              <img src="img/identity01.webp" class="identity__01" />
+              <img src="img/identity02.webp" class="identity__02" />
+              <img src="img/identity03.webp" class="identity__03" />
             </div>
           </div>
         </div>
@@ -137,6 +164,9 @@
 
   <script src="js/index.js"></script>
   <script src="js/services.js"></script>
+  <script type="text/javascript" async
+    src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/83e4579d-8ebf-4806-9d6f-1872d9f5072f-loader.js">
+  </script>
 </body>
 
 </html>

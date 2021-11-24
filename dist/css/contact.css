@@ -2,9 +2,22 @@ body {
   background-color: #F5B512;
 }
 
+label {
+  font-weight: 600;
+}
+
 .centered {
   position: relative;
   top: -25px;
+}
+
+.centered p {
+  font-size: 18px;
+}
+
+.centered p.contrast {
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .centered .infobox {
@@ -26,15 +39,6 @@ body {
 .centered .infobox h1 {
   font-weight: 400;
   margin-bottom: 20px;
-}
-
-.centered .infobox p {
-  font-size: 18px;
-}
-
-.centered .infobox p.contrast {
-  font-size: 24px;
-  font-weight: 300;
 }
 
 .centered .infobox span {

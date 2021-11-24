@@ -33,6 +33,33 @@
 
   <!-- Title -->
   <title>Spacesheep Produtora</title>
+
+  <!-- Facebook Pixel Code -->
+  <script>
+    ! function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '345396790676965');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=345396790676965&ev=PageView&noscript=1" /></noscript>
+  <!-- End Facebook Pixel Code -->
 </head>
 
 <body>
@@ -47,7 +74,7 @@
     }
   </style>
   <header>
-    <nav>
+    <nav class="container">
       <a href="/">
         <img class="nav__brand" src="img/spacesheep_brand.svg" alt="Spacesheep Logo" />
       </a>
@@ -60,7 +87,7 @@
         <li><a href="/">Home</a></li>
         <li><a href="servicos.html">Serviços</a></li>
         <li><a href="sobre.html">Quem somos</a></li>
-        <li><a href="contato.html" class="nav__button">Fale conosco</a></li>
+        <li><a href="contato.html" class="btn btn-primary">Fale conosco</a></li>
       </ul>
     </nav>
   </header>
@@ -117,20 +144,25 @@
   </div>
 
   <div class="footer">
-    <div class="footer__l">
-      <span style="display: block;">Copyright © 2021 SpaceSheep | Todos direitos reservados</span>
-      <a href="#">Políticas de privacidade</a>
-    </div>
-    <div class="footer__r">
-      <div class="ig">
-        <a href="https://www.instagram.com/spacesheepprodutora/" target="_blank">
-          <img src="img/instagram.svg" />
-        </a>
+    <div class="container d-flex py-3">
+      <div class="footer__l">
+        <span style="display: block;">Copyright © 2021 SpaceSheep | Todos direitos reservados</span>
+        <a href="politicas-de-privacidade.html">Políticas de privacidade</a>
+      </div>
+      <div class="footer__r">
+        <div class="ig">
+          <a href="https://www.instagram.com/spacesheepprodutora/" target="_blank">
+            <img src="img/instagram.svg" />
+          </a>
+        </div>
       </div>
     </div>
   </div>
 
   <script src="js/index.js"></script>
+  <script type="text/javascript" async
+    src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/83e4579d-8ebf-4806-9d6f-1872d9f5072f-loader.js">
+  </script>
 </body>
 
 </html>

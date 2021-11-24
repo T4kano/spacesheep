@@ -42,6 +42,33 @@
 
   <!-- Title -->
   <title>Spacesheep Produtora</title>
+
+  <!-- Facebook Pixel Code -->
+  <script>
+    ! function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '345396790676965');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=345396790676965&ev=PageView&noscript=1" /></noscript>
+  <!-- End Facebook Pixel Code -->
 </head>
 
 <body>
@@ -75,7 +102,7 @@
             marca.</p>
           <p>Você precisa de mais audiência? Precisa vender mais? Temos a solução <span>ideal</span> para
             você.</p>
-          <a class="btn btn-primary btn-lg">Receber uma proposta</a>
+          <a href="contato.html" class="btn btn-primary btn-lg">Receber uma proposta</a>
         </div>
         <div class="col-lg-5 sheep">
           <img src="img/ilustracao_ovelha.svg" alt="Ilustração ovelha" class="img-responsive" loading="lazy" />
@@ -98,7 +125,7 @@
           movidos pelo mesmo propósito: atender e surpreender pessoas.</p>
       </div>
       <div class="col-lg-6">
-        <img src="img/foto_equipe_spacesheep_01.jpg" alt="Foto da equipe Spacesheep" class="img-fluid" loading="lazy" />
+        <img src="img/foto_equipe_spacesheep.webp" alt="Foto da equipe Spacesheep" class="img-fluid" loading="lazy" />
       </div>
     </div>
   </div>
@@ -193,6 +220,9 @@
 
   <!-- Index JS -->
   <script src="js/index.js"></script>
+  <script type="text/javascript" async
+    src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/83e4579d-8ebf-4806-9d6f-1872d9f5072f-loader.js">
+  </script>
   <script>
     $(".carousel").owlCarousel({
       loop: true,

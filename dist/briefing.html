@@ -2,154 +2,185 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Briefing Spacesheep.">
-    <meta name="keywords"
-        content="spacesheep, spacesheep produtora, produtora, produtora indaiatuba, podcast, indaiatuba, briefing">
-    <meta name="author" content="Eduardo Takano">
-    <meta author="Eduardo Takano">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Briefing Spacesheep.">
+  <meta name="keywords"
+    content="spacesheep, spacesheep produtora, produtora, produtora indaiatuba, podcast, indaiatuba, briefing">
+  <meta name="author" content="Eduardo Takano">
+  <meta author="Eduardo Takano">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/favicon.ico" />
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-    <!-- Bootstrap JS -->
-    <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.bundle.min.js"></script>
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/main.css" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/custom.css" />
+  <link rel="stylesheet" href="css/main.css" />
 
-    <!-- TITLE -->
-    <title>Briefing Spacesheep</title>
+  <!-- TITLE -->
+  <title>Briefing Spacesheep</title>
+
+  <!-- Facebook Pixel Code -->
+  <script>
+    ! function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '345396790676965');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=345396790676965&ev=PageView&noscript=1" /></noscript>
+  <!-- End Facebook Pixel Code -->
 </head>
 
 <body>
-    <style>
-        body {
-            background-color: #242E38;
-        }
-    </style>
+  <style>
+    body {
+      background-color: #242E38;
+    }
+  </style>
 
-    <div class="container-fluid py-5">
-        <div class="container col-xxl-8 px-4 py-5">
-            <iframe id="JotFormIFrame-211935679779679" title="Briefing Identidade Visual"
-                onload="window.parent.scrollTo(0,0)" allowtransparency="true" allowfullscreen="true"
-                allow="geolocation; microphone; camera;" src="https://form.jotform.com/211935679779679" frameborder="0"
-                style=" min-width: 100%; height:539px; border:none;" scrolling="no">
-            </iframe>
-            <script type="text/javascript">
-                var ifr = document.getElementById("JotFormIFrame-211935679779679");
-                if (ifr) {
-                    var src = ifr.src;
-                    var iframeParams = [];
-                    if (window.location.href && window.location.href.indexOf("?") > -1) {
-                        iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf(
-                            "?") + 1).split('&'));
-                    }
-                    if (src && src.indexOf("?") > -1) {
-                        iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
-                        src = src.substr(0, src.indexOf("?"))
-                    }
-                    iframeParams.push("isIframeEmbed=1");
-                    ifr.src = src + "?" + iframeParams.join('&');
-                }
-                window.handleIFrameMessage = function (e) {
-                    if (typeof e.data === 'object') {
-                        return;
-                    }
-                    var args = e.data.split(":");
-                    if (args.length > 2) {
-                        iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]);
-                    } else {
-                        iframe = document.getElementById("JotFormIFrame");
-                    }
-                    if (!iframe) {
-                        return;
-                    }
-                    switch (args[0]) {
-                        case "scrollIntoView":
-                            iframe.scrollIntoView();
-                            break;
-                        case "setHeight":
-                            iframe.style.height = args[1] + "px";
-                            break;
-                        case "collapseErrorPage":
-                            if (iframe.clientHeight > window.innerHeight) {
-                                iframe.style.height = window.innerHeight + "px";
-                            }
-                            break;
-                        case "reloadPage":
-                            window.location.reload();
-                            break;
-                        case "loadScript":
-                            if (!window.isPermitted(e.origin, ['jotform.com', 'jotform.pro'])) {
-                                break;
-                            }
-                            var src = args[1];
-                            if (args.length > 3) {
-                                src = args[1] + ':' + args[2];
-                            }
-                            var script = document.createElement('script');
-                            script.src = src;
-                            script.type = 'text/javascript';
-                            document.body.appendChild(script);
-                            break;
-                        case "exitFullscreen":
-                            if (window.document.exitFullscreen) window.document.exitFullscreen();
-                            else if (window.document.mozCancelFullScreen) window.document.mozCancelFullScreen();
-                            else if (window.document.mozCancelFullscreen) window.document.mozCancelFullScreen();
-                            else if (window.document.webkitExitFullscreen) window.document.webkitExitFullscreen();
-                            else if (window.document.msExitFullscreen) window.document.msExitFullscreen();
-                            break;
-                    }
-                    var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
-                    if (isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
-                        var urls = {
-                            "docurl": encodeURIComponent(document.URL),
-                            "referrer": encodeURIComponent(document.referrer)
-                        };
-                        iframe.contentWindow.postMessage(JSON.stringify({
-                            "type": "urls",
-                            "value": urls
-                        }), "*");
-                    }
-                };
-                window.isPermitted = function (originUrl, whitelisted_domains) {
-                    var url = document.createElement('a');
-                    url.href = originUrl;
-                    var hostname = url.hostname;
-                    var result = false;
-                    if (typeof hostname !== 'undefined') {
-                        whitelisted_domains.forEach(function (element) {
-                            if (hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||
-                                hostname === element) {
-                                result = true;
-                            }
-                        });
-                        return result;
-                    }
-                }
-                if (window.addEventListener) {
-                    window.addEventListener("message", handleIFrameMessage, false);
-                } else if (window.attachEvent) {
-                    window.attachEvent("onmessage", handleIFrameMessage);
-                }
-            </script>
-            <a href="/">Back to SpaceSheep</a>
-        </div> <!-- /.container -->
-    </div> <!-- /.container-fluid -->
+  <div class="container-fluid py-5">
+    <div class="container col-xxl-8 px-4 py-5">
+      <iframe id="JotFormIFrame-211935679779679" title="Briefing Identidade Visual" onload="window.parent.scrollTo(0,0)"
+        allowtransparency="true" allowfullscreen="true" allow="geolocation; microphone; camera;"
+        src="https://form.jotform.com/211935679779679" frameborder="0"
+        style=" min-width: 100%; height:539px; border:none;" scrolling="no">
+      </iframe>
+      <script type="text/javascript">
+        var ifr = document.getElementById("JotFormIFrame-211935679779679");
+        if (ifr) {
+          var src = ifr.src;
+          var iframeParams = [];
+          if (window.location.href && window.location.href.indexOf("?") > -1) {
+            iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf(
+              "?") + 1).split('&'));
+          }
+          if (src && src.indexOf("?") > -1) {
+            iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
+            src = src.substr(0, src.indexOf("?"))
+          }
+          iframeParams.push("isIframeEmbed=1");
+          ifr.src = src + "?" + iframeParams.join('&');
+        }
+        window.handleIFrameMessage = function (e) {
+          if (typeof e.data === 'object') {
+            return;
+          }
+          var args = e.data.split(":");
+          if (args.length > 2) {
+            iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]);
+          } else {
+            iframe = document.getElementById("JotFormIFrame");
+          }
+          if (!iframe) {
+            return;
+          }
+          switch (args[0]) {
+            case "scrollIntoView":
+              iframe.scrollIntoView();
+              break;
+            case "setHeight":
+              iframe.style.height = args[1] + "px";
+              break;
+            case "collapseErrorPage":
+              if (iframe.clientHeight > window.innerHeight) {
+                iframe.style.height = window.innerHeight + "px";
+              }
+              break;
+            case "reloadPage":
+              window.location.reload();
+              break;
+            case "loadScript":
+              if (!window.isPermitted(e.origin, ['jotform.com', 'jotform.pro'])) {
+                break;
+              }
+              var src = args[1];
+              if (args.length > 3) {
+                src = args[1] + ':' + args[2];
+              }
+              var script = document.createElement('script');
+              script.src = src;
+              script.type = 'text/javascript';
+              document.body.appendChild(script);
+              break;
+            case "exitFullscreen":
+              if (window.document.exitFullscreen) window.document.exitFullscreen();
+              else if (window.document.mozCancelFullScreen) window.document.mozCancelFullScreen();
+              else if (window.document.mozCancelFullscreen) window.document.mozCancelFullScreen();
+              else if (window.document.webkitExitFullscreen) window.document.webkitExitFullscreen();
+              else if (window.document.msExitFullscreen) window.document.msExitFullscreen();
+              break;
+          }
+          var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+          if (isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+            var urls = {
+              "docurl": encodeURIComponent(document.URL),
+              "referrer": encodeURIComponent(document.referrer)
+            };
+            iframe.contentWindow.postMessage(JSON.stringify({
+              "type": "urls",
+              "value": urls
+            }), "*");
+          }
+        };
+        window.isPermitted = function (originUrl, whitelisted_domains) {
+          var url = document.createElement('a');
+          url.href = originUrl;
+          var hostname = url.hostname;
+          var result = false;
+          if (typeof hostname !== 'undefined') {
+            whitelisted_domains.forEach(function (element) {
+              if (hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||
+                hostname === element) {
+                result = true;
+              }
+            });
+            return result;
+          }
+        }
+        if (window.addEventListener) {
+          window.addEventListener("message", handleIFrameMessage, false);
+        } else if (window.attachEvent) {
+          window.attachEvent("onmessage", handleIFrameMessage);
+        }
+      </script>
+      <a href="/">Back to SpaceSheep</a>
+    </div> <!-- /.container -->
+  </div> <!-- /.container-fluid -->
+
+  <script type="text/javascript" async
+    src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/83e4579d-8ebf-4806-9d6f-1872d9f5072f-loader.js">
+  </script>
 </body>
 
 </html>
